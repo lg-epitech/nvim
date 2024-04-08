@@ -1,7 +1,8 @@
 local M = {
-    "lg-epitech/epi_headers",
+    "epi_headers",
+    dir = "~/projects/epi_headers",
     config = function()
-        vim.keymap.set('n', "tek", function() require('headers').insert_header() end);
+        vim.keymap.set('n', "tek", function() require('epiheaders').insert_header() end);
     end
 }
 

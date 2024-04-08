@@ -3,11 +3,11 @@ require "laurent.options"
 require "laurent.keymaps"
 require "laurent.autocmds"
 
+
 spec_list "laurent.colorschemes"
 spec "laurent.lualine"
 spec "laurent.telescope"
 spec "laurent.comments"
-spec "laurent.epi_headers"
 spec "laurent.gitsigns"
 spec "laurent.lazygit"
 spec "laurent.toggleterm"
@@ -28,6 +28,11 @@ spec "laurent.autopairs"
 spec "laurent.move"
 spec "laurent.todocomments"
 spec "laurent.illuminate"
+
+-- Local plugins
+spec "laurent.epi_headers"
+spec "laurent.headersnvim"
+spec "laurent.nshare"
 
 require "laurent.lazy"
 
