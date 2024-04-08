@@ -28,6 +28,7 @@ spec "laurent.autopairs"
 spec "laurent.move"
 spec "laurent.todocomments"
 spec "laurent.illuminate"
+spec "laurent.luasnip"
 
 -- Local plugins
 spec "laurent.epi_headers"
