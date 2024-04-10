@@ -29,6 +29,7 @@ spec "laurent.move"
 spec "laurent.todocomments"
 spec "laurent.illuminate"
 spec "laurent.luasnip"
+spec "laurent.boo"
 
 -- Local plugins
 spec "laurent.epi_headers"
