@@ -32,6 +32,7 @@ Spec "laurent.luasnip"
 Spec "laurent.boo"
 Spec "laurent.trouble"
 Spec "laurent.oil"
+Spec "laurent.quickfix"
 
 -- Local plugins
 Spec "laurent.epi_headers"
