@@ -32,24 +32,27 @@ keymap("n", "<leader>b", ":Telescope buffers<CR>", opts)
 keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>t", ":Telescope live_grep<CR>", opts)
 
-keymap("n", "<C-\\>", ":ToggleTerm direction=tab<CR>", opts)
-
 -- Move
-vim.keymap.set('n', '<A-j>', ':MoveLine(1)<CR>', opts)
-vim.keymap.set('n', '<A-k>', ':MoveLine(-1)<CR>', opts)
-vim.keymap.set('n', '<A-h>', ':MoveHChar(-1)<CR>', opts)
-vim.keymap.set('n', '<A-l>', ':MoveHChar(1)<CR>', opts)
-vim.keymap.set('n', '<leader>wf', ':MoveWord(1)<CR>', opts)
-vim.keymap.set('n', '<leader>wb', ':MoveWord(-1)<CR>', opts)
+keymap('n', '<A-j>', ':MoveLine(1)<CR>', opts)
+keymap('n', '<A-k>', ':MoveLine(-1)<CR>', opts)
+keymap('n', '<A-h>', ':MoveHChar(-1)<CR>', opts)
+keymap('n', '<A-l>', ':MoveHChar(1)<CR>', opts)
+keymap('n', '<leader>wf', ':MoveWord(1)<CR>', opts)
+keymap('n', '<leader>wb', ':MoveWord(-1)<CR>', opts)
 
 -- Visual-mode commands
-vim.keymap.set('v', '<A-j>', ':MoveBlock(1)<CR>', opts)
-vim.keymap.set('v', '<A-k>', ':MoveBlock(-1)<CR>', opts)
-vim.keymap.set('v', '<A-h>', ':MoveHBlock(-1)<CR>', opts)
-vim.keymap.set('v', '<A-l>', ':MoveHBlock(1)<CR>', opts)
+keymap('v', '<A-j>', ':MoveBlock(1)<CR>', opts)
+keymap('v', '<A-k>', ':MoveBlock(-1)<CR>', opts)
+keymap('v', '<A-h>', ':MoveHBlock(-1)<CR>', opts)
+keymap('v', '<A-l>', ':MoveHBlock(1)<CR>', opts)
 
-    -- -- Resize with arrows
-    -- ["<C-Up>"] = ":resize -2<CR>",
-    -- ["<C-Down>"] = ":resize +2<CR>",
-    -- ["<C-Left>"] = ":vertical resize -2<CR>",
-    -- ["<C-Right>"] = ":vertical resize +2<CR>",
+keymap('n', "<C-Up>", ":resize -2<CR>", opts)
+keymap('n', "<C-Down>", ":resize +2<CR>", opts)
+keymap('n', "<C-Left>", ":vertical resize -2<CR>", opts)
+keymap('n', "<C-Right>", ":vertical resize +2<CR>", opts)
+
+-- ToggleTerm
+keymap("n", "<C-\\>", ":ToggleTerm direction=vertical size=80<CR>", opts)
+keymap("n", "<C-|>", ":ToggleTerm direction=tab name='Full size Terminal'<CR>", opts)
+keymap('t', '<Esc>', "<C-\\><C-n>", opts)
+keymap('t', '<C-\\>', "<C-\\><C-n>:ToggleTerm<CR>", opts)
