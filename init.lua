@@ -31,6 +31,7 @@ Spec "laurent.illuminate"
 Spec "laurent.luasnip"
 Spec "laurent.boo"
 Spec "laurent.trouble"
+Spec "laurent.oil"
 
 -- Local plugins
 Spec "laurent.epi_headers"

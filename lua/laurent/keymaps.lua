@@ -24,7 +24,7 @@ keymap("v", ">", ">gv", opts)
 keymap("x", "p", [["_dP]])
 
 keymap("n", "<leader>w", ":lua vim.wo.wrap = not vim.wo.wrap<CR>", opts)
-keymap("n", "<leader>e", ":Ex<CR>", opts)
+keymap("n", "<leader>e", ":Oil<CR>", opts)
 keymap("n", "<leader>h", ":nohl<CR>", opts)
 
 -- Telescope
