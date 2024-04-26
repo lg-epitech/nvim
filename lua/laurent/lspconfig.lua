@@ -31,6 +31,7 @@ local M = {
         },
         },}
         lspconfig.csharp_ls.setup {}
+        lspconfig.yamlls.setup {}
 
 
         -- Global mappings.

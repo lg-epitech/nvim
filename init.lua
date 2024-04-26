@@ -33,6 +33,7 @@ Spec "laurent.boo"
 Spec "laurent.trouble"
 Spec "laurent.oil"
 Spec "laurent.quickfix"
+Spec "laurent.undotree"
 
 -- Local plugins
 Spec "laurent.epi_headers"
@@ -42,4 +43,4 @@ Spec "laurent.nshare"
 require "laurent.lazy"
 
 -- Config
-vim.cmd.colorscheme "tokyonight"
+vim.cmd.colorscheme "rose-pine-main"

@@ -56,3 +56,6 @@ keymap("n", "<C-\\>", ":ToggleTerm direction=vertical size=80<CR>", opts)
 keymap("n", "<C-|>", ":ToggleTerm direction=tab name='Full size Terminal'<CR>", opts)
 keymap('t', '<Esc>', "<C-\\><C-n>", opts)
 keymap('t', '<C-\\>', "<C-\\><C-n>:ToggleTerm<CR>", opts)
+
+-- Undotree
+keymap("n", "<leader>u", ":UndotreeToggle<CR>", opts)
