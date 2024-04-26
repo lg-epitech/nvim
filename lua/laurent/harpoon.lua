@@ -19,8 +19,8 @@ local M = {
             vim.keymap.set('n', "<M-i>", function() harpoon:list():select(8) end)
             vim.keymap.set('n', "<M-o>", function() harpoon:list():select(9) end)
             vim.keymap.set('n', "<M-p>", function() harpoon:list():select(10) end)
-            vim.keymap.set('n', "<M-h>", function() harpoon:list():prev() end)
-            vim.keymap.set('n', "<M-l>", function() harpoon:list():next() end)
+            -- vim.keymap.set('n', "<M-h>", function() harpoon:list():prev() end)
+            -- vim.keymap.set('n', "<M-l>", function() harpoon:list():next() end)
         end
 }
 

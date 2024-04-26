@@ -59,3 +59,7 @@ keymap('t', '<C-\\>', "<C-\\><C-n>:ToggleTerm<CR>", opts)
 
 -- Undotree
 keymap("n", "<leader>u", ":UndotreeToggle<CR>", opts)
+
+-- Quickfix list
+keymap("n", "<M-h>", ":cprev<CR>", opts)
+keymap("n", "<M-l>", ":cnext<CR>", opts)
