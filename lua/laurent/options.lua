@@ -1,4 +1,3 @@
-vim.opt.clipboard = "unnamedplus"
 vim.opt.showmode = false
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4

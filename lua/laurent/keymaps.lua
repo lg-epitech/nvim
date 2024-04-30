@@ -63,3 +63,7 @@ keymap("n", "<leader>u", ":UndotreeToggle<CR>", opts)
 -- Quickfix list
 keymap("n", "<M-h>", ":cprev<CR>", opts)
 keymap("n", "<M-l>", ":cnext<CR>", opts)
+
+-- Quick paste from system clipboard
+keymap("n", "<leader>v", '"+p', opts)
+keymap("n", "x", '"_x', opts)

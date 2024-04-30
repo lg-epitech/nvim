@@ -3,7 +3,7 @@ require "laurent.options"
 require "laurent.keymaps"
 require "laurent.autocmds"
 
-
+-- Plugin list
 SpecList "laurent.colorschemes"
 Spec "laurent.lualine"
 Spec "laurent.telescope"
@@ -27,7 +27,6 @@ Spec "laurent.indentation"
 Spec "laurent.autopairs"
 Spec "laurent.move"
 Spec "laurent.todocomments"
-Spec "laurent.illuminate"
 Spec "laurent.luasnip"
 Spec "laurent.boo"
 Spec "laurent.trouble"
