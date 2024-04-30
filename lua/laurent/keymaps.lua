@@ -27,6 +27,8 @@ keymap("n", "<leader>w", ":lua vim.wo.wrap = not vim.wo.wrap<CR>", opts)
 keymap("n", "<leader>e", ":Oil<CR>", opts)
 keymap("n", "<leader>h", ":nohl<CR>", opts)
 
+keymap("i", "<C-H>", "<Esc>dbs", opts)
+
 -- Telescope
 keymap("n", "<leader>b", ":Telescope buffers<CR>", opts)
 keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
