@@ -39,6 +39,3 @@ Spec "laurent.headersnvim"
 Spec "laurent.nshare"
 
 require "laurent.lazy"
-
--- Config
-vim.cmd.colorscheme "rose-pine-main"
