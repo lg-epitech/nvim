@@ -33,14 +33,14 @@ keymap("i", "<C-H>", "<Esc>dbs", opts)
 keymap("n", "<leader>b", ":Telescope buffers<CR>", opts)
 keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>t", ":Telescope live_grep<CR>", opts)
+keymap("n", "<leader>/", ":Telescope current_buffer_fuzzy_find<CR>", opts)
+keymap("n", "<leader>gw", ":Telescope grep_string<CR>", opts)
 
 -- Move
 keymap('n', '<A-j>', ':MoveLine(1)<CR>', opts)
 keymap('n', '<A-k>', ':MoveLine(-1)<CR>', opts)
 keymap('n', '<A-h>', ':MoveHChar(-1)<CR>', opts)
 keymap('n', '<A-l>', ':MoveHChar(1)<CR>', opts)
-keymap('n', '<leader>wf', ':MoveWord(1)<CR>', opts)
-keymap('n', '<leader>wb', ':MoveWord(-1)<CR>', opts)
 
 -- Visual-mode commands
 keymap('v', '<A-j>', ':MoveBlock(1)<CR>', opts)
@@ -69,3 +69,9 @@ keymap("n", "<M-l>", ":cnext<CR>", opts)
 -- Quick paste from system clipboard
 keymap("n", "<leader>v", '"+p', opts)
 keymap("n", "x", '"_x', opts)
+
+-- Resize windows
+keymap("n", "<M-q>", "<c-w>5<")
+keymap("n", "<M-d>", "<c-w>5>")
+keymap("n", "<M-z>", "<C-W>+")
+keymap("n", "<M-s>", "<C-W>-")

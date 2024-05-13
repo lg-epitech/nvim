@@ -32,6 +32,7 @@ Spec "laurent.boo"
 Spec "laurent.trouble"
 Spec "laurent.oil"
 Spec "laurent.undotree"
+Spec "laurent.neodev"
 
 -- Local plugins
 Spec "laurent.epi_headers"
