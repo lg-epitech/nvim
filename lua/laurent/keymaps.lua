@@ -71,7 +71,7 @@ keymap("n", "<leader>v", '"+p', opts)
 keymap("n", "x", '"_x', opts)
 
 -- Resize windows
-keymap("n", "<M-q>", "<c-w>5<")
-keymap("n", "<M-d>", "<c-w>5>")
-keymap("n", "<M-z>", "<C-W>+")
-keymap("n", "<M-s>", "<C-W>-")
+keymap("n", "<M-Q>", "<c-w>5<")
+keymap("n", "<M-D>", "<c-w>5>")
+keymap("n", "<M-Z>", "<C-W>+")
+keymap("n", "<M-S>", "<C-W>-")
