@@ -52,6 +52,7 @@ table.insert(M, {
     "rebelot/kanagawa.nvim",
 })
 
+-- Rose pine
 table.insert(M, {
     "rose-pine/neovim", name = "rose-pine", opts = {
         variant = "auto", -- auto, main, moon, or dawn
@@ -121,9 +122,18 @@ table.insert(M, {
     },
     lazy = false,
     priority = 1000,
+    -- config = function()
+    --     vim.cmd.colorscheme "rose-pine-main"
+    -- end
+})
+
+table.insert(M, {
+    "catppuccin/nvim",
+    name = "catppuccin",
     config = function()
-        vim.cmd.colorscheme "rose-pine-main"
-    end
+        vim.cmd.colorscheme "catppuccin"
+    end,
+    priority = 1000,
 })
 
 return M
