@@ -122,17 +122,14 @@ table.insert(M, {
     },
     lazy = false,
     priority = 1000,
-    -- config = function()
-    --     vim.cmd.colorscheme "rose-pine-main"
-    -- end
+    config = function()
+        vim.cmd.colorscheme "rose-pine"
+    end,
 })
 
 table.insert(M, {
     "catppuccin/nvim",
     name = "catppuccin",
-    config = function()
-        vim.cmd.colorscheme "catppuccin"
-    end,
     priority = 1000,
 })
 

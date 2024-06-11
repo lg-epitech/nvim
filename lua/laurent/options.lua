@@ -17,3 +17,4 @@ vim.opt.directory = "/home/laurent/.config/nvim/swapdir//"
 vim.opt.swapfile = false
 vim.opt.backup = true
 vim.opt.undofile = true
+vim.opt.termguicolors = true

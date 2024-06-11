@@ -2,12 +2,11 @@ local M = {
     "ThePrimeagen/harpoon",
         branch = "harpoon2",
         dependencies = { "nvim-lua/plenary.nvim" },
-        opts = {},
         config = function()
             -- HARPOONING
             local harpoon = require("harpoon")
             harpoon:setup()
-            vim.keymap.set('n', "<C-a>", function() harpoon:list():append() end)
+            vim.keymap.set('n', "<CR>", function() harpoon:list():append() end)
             vim.keymap.set('n', "<M-m>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
             vim.keymap.set('n', "<M-a>", function() harpoon:list():select(1) end)
             vim.keymap.set('n', "<M-z>", function() harpoon:list():select(2) end)
