@@ -41,6 +41,8 @@ keymap('n', '<A-j>', ':MoveLine(1)<CR>', opts)
 keymap('n', '<A-k>', ':MoveLine(-1)<CR>', opts)
 keymap('n', '<A-h>', ':MoveHChar(-1)<CR>', opts)
 keymap('n', '<A-l>', ':MoveHChar(1)<CR>', opts)
+keymap('n', '<C-d>', '<C-d>zz', opts)
+keymap('n', '<C-c>', '<C-u>zz', opts)
 
 -- Visual-mode commands
 keymap('v', '<A-j>', ':MoveBlock(1)<CR>', opts)

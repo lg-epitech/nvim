@@ -28,6 +28,6 @@ vim.api.nvim_create_autocmd("BufEnter", {
 
 vim.api.nvim_create_autocmd("BufEnter", {
     callback = function()
-        vim.cmd("ColorizerAttachToBuffer")
+        vim.cmd("ColorizerToggle")
     end
 })
