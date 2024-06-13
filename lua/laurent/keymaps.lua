@@ -75,3 +75,6 @@ keymap("n", "<M-Q>", "<c-w>5<")
 keymap("n", "<M-D>", "<c-w>5>")
 keymap("n", "<M-Z>", "<C-W>+")
 keymap("n", "<M-S>", "<C-W>-")
+
+-- Spelling
+keymap("n", "<F6>", "<Cmd>silent setlocal spell! spelllang=fr<CR>", opts)
