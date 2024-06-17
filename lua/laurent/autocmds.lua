@@ -25,9 +25,3 @@ vim.api.nvim_create_autocmd("BufEnter", {
         vim.cmd("set spell")
     end
 })
-
-vim.api.nvim_create_autocmd("BufEnter", {
-    callback = function()
-        vim.cmd("ColorizerToggle")
-    end
-})
