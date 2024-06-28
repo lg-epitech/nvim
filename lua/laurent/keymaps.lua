@@ -10,6 +10,7 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 keymap("n", "<C-tab>", "<c-6>", opts)
+keymap("n", "<C-H>", "<Esc><Cmd>e#<CR>", opts)
 
 keymap("n", "n", "nzz", opts)
 keymap("n", "N", "Nzz", opts)
@@ -25,7 +26,7 @@ keymap("x", "p", [["_dP]])
 
 keymap("n", "<leader>w", ":lua vim.wo.wrap = not vim.wo.wrap<CR>", opts)
 keymap("n", "<leader>e", ":Oil<CR>", opts)
-keymap("n", "<Esc><Esc>", ":nohl<CR>", opts)
+keymap("n", "<C-c>", "<Esc>:nohl<CR>", opts)
 
 keymap("i", "<C-H>", "<Esc>dbs", opts)
 
@@ -42,7 +43,7 @@ keymap('n', '<A-k>', ':MoveLine(-1)<CR>', opts)
 keymap('n', '<A-h>', ':MoveHChar(-1)<CR>', opts)
 keymap('n', '<A-l>', ':MoveHChar(1)<CR>', opts)
 keymap('n', '<C-d>', '<C-d>zz', opts)
-keymap('n', '<C-c>', '<C-u>zz', opts)
+keymap('n', '<C-u>', '<C-u>zz', opts)
 
 -- Visual-mode commands
 keymap('v', '<A-j>', ':MoveBlock(1)<CR>', opts)

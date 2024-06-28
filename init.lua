@@ -35,6 +35,7 @@ Spec "laurent.undotree"
 Spec "laurent.neodev"
 Spec "laurent.flash"
 Spec "laurent.colorizer"
+Spec "laurent.miniai"
 
 -- Local plugins
 Spec "laurent.epi_headers"
