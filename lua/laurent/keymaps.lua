@@ -10,7 +10,7 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 keymap("n", "<C-tab>", "<c-6>", opts)
-keymap("n", "<C-H>", "<Esc><Cmd>e#<CR>", opts)
+keymap("n", "<BS>", "<Esc><Cmd>e#<CR>", opts)
 
 keymap("n", "n", "nzz", opts)
 keymap("n", "N", "Nzz", opts)
@@ -81,3 +81,9 @@ keymap("n", "<M-S>", "<C-W>-")
 
 -- Spelling
 keymap("n", "<F6>", "<Cmd>silent setlocal spell! spelllang=fr<CR>", opts)
+
+-- Dadbod
+keymap("n", "gdb", function()
+    vim.api.nvim_command("tabnew")
+    vim.api.nvim_command("DBUI")
+end, opts)

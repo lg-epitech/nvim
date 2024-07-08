@@ -5,6 +5,7 @@ require "laurent.autocmds"
 
 -- Plugin list
 SpecList "laurent.colorschemes"
+SpecList "laurent.dadbod"
 Spec "laurent.lualine"
 Spec "laurent.telescope"
 Spec "laurent.comments"
@@ -35,7 +36,6 @@ Spec "laurent.undotree"
 Spec "laurent.neodev"
 Spec "laurent.flash"
 Spec "laurent.colorizer"
-Spec "laurent.miniai"
 
 -- Local plugins
 Spec "laurent.epi_headers"
