@@ -7,6 +7,7 @@ local M = {
         lspconfig.tsserver.setup({})
         lspconfig.bashls.setup({})
         lspconfig.rust_analyzer.setup({})
+        lspconfig.cssls.setup({})
 
         -- C
         lspconfig.clangd.setup({

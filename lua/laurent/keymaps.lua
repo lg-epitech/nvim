@@ -87,3 +87,9 @@ keymap("n", "gdb", function()
     vim.api.nvim_command("tabnew")
     vim.api.nvim_command("DBUI")
 end, opts)
+
+-- Tabs
+keymap("n", "<Tab>", "<Cmd>tabnext<CR>", opts)
+
+-- Prettier NOTE: This is a temporary keybind and should be specific to filetypes
+keymap("n", "<leader>s", "<Cmd>%!prettier \"%\"<CR>", opts)

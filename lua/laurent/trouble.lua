@@ -7,7 +7,7 @@ local M = {
         -- refer to the configuration section below
     },
     config = function()
-        vim.keymap.set("n", "<leader>p", ":TroubleToggle<CR>", {silent = true})
+        vim.keymap.set("n", "<leader>p", "<Cmd>Trouble diagnostics<CR>", {silent = true})
     end
 }
 

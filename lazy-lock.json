@@ -38,5 +38,6 @@
   "undotree": { "branch": "master", "commit": "56c684a805fe948936cda0d1b19505b84ad7e065" },
   "vim-dadbod": { "branch": "master", "commit": "7888cb7164d69783d3dce4e0283decd26b82538b" },
   "vim-dadbod-completion": { "branch": "master", "commit": "8c9051c1cfc73fcf5bfe9a84db7097e4f7c0180d" },
-  "vim-dadbod-ui": { "branch": "master", "commit": "696e1edc4ec048aad6b55fc98cec238a7499bd7c" }
+  "vim-dadbod-ui": { "branch": "master", "commit": "696e1edc4ec048aad6b55fc98cec238a7499bd7c" },
+  "vim-prettier": { "branch": "release/0.x", "commit": "9eb448e45ef88e90681335fda32bcae52a09d6dc" }
 }
