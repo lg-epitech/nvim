@@ -21,3 +21,4 @@ vim.opt.undofile = true
 vim.opt.termguicolors = true
 vim.o.complete = ".,w,b,u,t,i,kspell"
 vim.o.scrolloff = 8
+vim.o.wrap = false
