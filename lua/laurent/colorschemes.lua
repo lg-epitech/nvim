@@ -40,6 +40,9 @@ table.insert(M, {
       ---@param colors ColorScheme
       on_highlights = function(highlights, colors) end,
     },
+    config = function()
+        vim.cmd.colorscheme "tokyonight-moon"
+    end
 })
 
 -- Ayu
@@ -122,15 +125,19 @@ table.insert(M, {
     },
     lazy = false,
     priority = 1000,
-    config = function()
-        vim.cmd.colorscheme "rose-pine"
-    end,
+    -- config = function()
+    --     vim.cmd.colorscheme "rose-pine"
+    -- end,
 })
 
 table.insert(M, {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
+})
+
+table.insert(M, {
+    "LunarVim/darkplus.nvim",
 })
 
 return M

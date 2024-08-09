@@ -29,6 +29,7 @@ keymap("n", "<leader>e", ":Oil<CR>", opts)
 keymap("n", "<C-c>", "<Esc>:nohl<CR>", opts)
 
 keymap("i", "<C-H>", "<Esc>dbs", opts)
+keymap("n", "<F1>", "", opts)
 
 -- Telescope
 keymap("n", "<leader>b", ":Telescope buffers<CR>", opts)
