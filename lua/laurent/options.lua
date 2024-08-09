@@ -8,6 +8,8 @@ vim.opt.relativenumber = true
 vim.opt.signcolumn = "yes"
 vim.g.netrw_banner = 0
 vim.g.netrw_mouse = 2
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_perl_provider = 0
 vim.opt.inccommand = "split"
 vim.opt.formatoptions:remove "o"
 vim.opt.spelllang = { "fr" }
