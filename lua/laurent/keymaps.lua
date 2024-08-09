@@ -94,3 +94,6 @@ keymap("n", "<Tab>", "<Cmd>tabnext<CR>", opts)
 
 -- Prettier NOTE: This is a temporary keybind and should be specific to filetypes
 keymap("n", "<leader>s", "<Cmd>%!prettier \"%\"<CR>", opts)
+
+-- Context
+keymap("n", "<leader>co", "<Cmd>TSContextToggle<CR>", opts)
