@@ -20,3 +20,4 @@ vim.opt.backup = true
 vim.opt.undofile = true
 vim.opt.termguicolors = true
 vim.o.complete = ".,w,b,u,t,i,kspell"
+vim.o.scrolloff = 8
