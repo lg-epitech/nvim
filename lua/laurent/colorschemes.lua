@@ -140,4 +140,8 @@ table.insert(M, {
     "LunarVim/darkplus.nvim",
 })
 
+table.insert(M, {
+    "tjdevries/colorbuddy.nvim",
+})
+
 return M
