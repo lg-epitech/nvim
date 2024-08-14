@@ -3,7 +3,7 @@ local M = {
     config = function()
         -- Setup language servers.
         local lspconfig = require("lspconfig")
-        lspconfig.pylsp.setup({})
+        lspconfig.pyright.setup({})
         lspconfig.tsserver.setup({})
         lspconfig.bashls.setup({})
         lspconfig.rust_analyzer.setup({})

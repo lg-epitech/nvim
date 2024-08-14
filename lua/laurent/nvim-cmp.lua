@@ -90,7 +90,7 @@ local M = {
         require('lspconfig')['clangd'].setup {
             capabilities = capabilities
         }
-        require('lspconfig')['pylsp'].setup {
+        require('lspconfig')['pyright'].setup {
             capabilities = capabilities
         }
         require('lspconfig')['csharp_ls'].setup {
