@@ -97,3 +97,6 @@ keymap("n", "<leader>s", "<Cmd>%!prettier \"%\"<CR>", opts)
 
 -- Context
 keymap("n", "<leader>co", "<Cmd>TSContextToggle<CR>", opts)
+
+-- Git
+keymap("n", "<leader>gs", "<Cmd>Gitsigns toggle_current_line_blame<CR>", opts)

@@ -22,6 +22,18 @@ local M = {
                 enable = true,
             },
         }
+
+        local parser_config = require'nvim-treesitter.parsers'.get_parser_configs()
+        parser_config.note = {
+            install_info = {
+                url = "/home/laurent/projects/tree-sitter-note",
+                files = { "src/parser.c", "src/scanner.c"},
+                branch = "master",
+                generate_requires_npm = false, -- if stand-alone parser without npm dependencies
+                requires_generate_from_grammar = false, -- if folder contains pre-generated src/parser.c
+            },
+            filetype = "note",
+        }
     end
 }
 
