@@ -1,6 +1,6 @@
 vim.keymap.set(
     "n",
     "<leader>s",
-    ":%!autopep8 %",
+    ":%!autopep8 %<CR>",
     { noremap = true, silent = true }
 )
