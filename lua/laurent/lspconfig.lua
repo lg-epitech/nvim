@@ -8,6 +8,7 @@ local M = {
         lspconfig.bashls.setup({})
         lspconfig.rust_analyzer.setup({})
         lspconfig.tailwindcss.setup({})
+        lspconfig.ocamllsp.setup({})
 
         -- C
         lspconfig.clangd.setup({
