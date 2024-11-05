@@ -4,9 +4,8 @@ local M = {
         -- Setup language servers.
         local lspconfig = require("lspconfig")
         lspconfig.pyright.setup({})
-        lspconfig.tsserver.setup({})
+        lspconfig.ts_ls.setup({})
         lspconfig.bashls.setup({})
-        lspconfig.rust_analyzer.setup({})
         lspconfig.tailwindcss.setup({})
         lspconfig.ocamllsp.setup({})
 
@@ -35,6 +34,8 @@ local M = {
         })
         lspconfig.csharp_ls.setup({})
         lspconfig.yamlls.setup({})
+        lspconfig.asm_lsp.setup({})
+        lspconfig.nushell.setup({})
 
         -- Global mappings.
         -- See `:help vim.diagnostic.*` for documentation on any of the below functions

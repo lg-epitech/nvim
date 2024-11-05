@@ -39,6 +39,7 @@ Spec "laurent.colorizer"
 Spec "laurent.doge"
 Spec "laurent.tailwind"
 Spec "laurent.context"
+Spec "laurent.rustacean"
 
 -- Local plugins
 Spec "laurent.epi_headers"
