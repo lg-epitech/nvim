@@ -4,6 +4,6 @@ vim.opt.shiftwidth = 2
 vim.keymap.set(
     "n",
     "<leader>s",
-    '<Cmd>%!prettier "%"<CR>',
+    '<Cmd>silent !prettier --write "%"<CR>',
     { noremap = true, silent = true }
 )

@@ -1,6 +1,6 @@
 vim.keymap.set(
     "n",
     "<leader>s",
-    ":!stylua --config-path ~/.config/nvim/.stylua.toml %<CR>",
-    { noremap = true }
+    ":silent !stylua --config-path ~/.config/nvim/.stylua.toml %<CR>",
+    { noremap = true, silent = true, script = true }
 )
