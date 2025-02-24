@@ -37,6 +37,7 @@ local M = {
         lspconfig.asm_lsp.setup({})
         lspconfig.nushell.setup({})
         lspconfig.hls.setup({})
+        lspconfig.gopls.setup({})
 
         -- Global mappings.
         -- See `:help vim.diagnostic.*` for documentation on any of the below functions

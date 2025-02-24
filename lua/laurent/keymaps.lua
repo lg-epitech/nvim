@@ -39,29 +39,34 @@ keymap("n", "<leader>/", ":Telescope current_buffer_fuzzy_find<CR>", opts)
 keymap("n", "<leader>gw", ":Telescope grep_string<CR>", opts)
 
 -- Move
-keymap('n', '<A-j>', ':MoveLine(1)<CR>', opts)
-keymap('n', '<A-k>', ':MoveLine(-1)<CR>', opts)
-keymap('n', '<A-h>', ':MoveHChar(-1)<CR>', opts)
-keymap('n', '<A-l>', ':MoveHChar(1)<CR>', opts)
-keymap('n', '<C-d>', '<C-d>zz', opts)
-keymap('n', '<C-u>', '<C-u>zz', opts)
+keymap("n", "<A-j>", ":MoveLine(1)<CR>", opts)
+keymap("n", "<A-k>", ":MoveLine(-1)<CR>", opts)
+keymap("n", "<A-h>", ":MoveHChar(-1)<CR>", opts)
+keymap("n", "<A-l>", ":MoveHChar(1)<CR>", opts)
+keymap("n", "<C-d>", "<C-d>zz", opts)
+keymap("n", "<C-u>", "<C-u>zz", opts)
 
 -- Visual-mode commands
-keymap('v', '<A-j>', ':MoveBlock(1)<CR>', opts)
-keymap('v', '<A-k>', ':MoveBlock(-1)<CR>', opts)
-keymap('v', '<A-h>', ':MoveHBlock(-1)<CR>', opts)
-keymap('v', '<A-l>', ':MoveHBlock(1)<CR>', opts)
+keymap("v", "<A-j>", ":MoveBlock(1)<CR>", opts)
+keymap("v", "<A-k>", ":MoveBlock(-1)<CR>", opts)
+keymap("v", "<A-h>", ":MoveHBlock(-1)<CR>", opts)
+keymap("v", "<A-l>", ":MoveHBlock(1)<CR>", opts)
 
-keymap('n', "<C-Up>", ":resize -2<CR>", opts)
-keymap('n', "<C-Down>", ":resize +2<CR>", opts)
-keymap('n', "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap('n', "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-Up>", ":resize -2<CR>", opts)
+keymap("n", "<C-Down>", ":resize +2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- ToggleTerm
 keymap("n", "<C-\\>", ":ToggleTerm direction=vertical size=80<CR>", opts)
-keymap("n", "<C-|>", ":ToggleTerm direction=tab name='Full size Terminal'<CR>", opts)
-keymap('t', '<Esc>', "<C-\\><C-n>", opts)
-keymap('t', '<C-\\>', "<C-\\><C-n>:ToggleTerm<CR>", opts)
+keymap(
+    "n",
+    "<C-|>",
+    ":ToggleTerm direction=tab name='Full size Terminal'<CR>",
+    opts
+)
+keymap("t", "<Esc>", "<C-\\><C-n>", opts)
+keymap("t", "<C-\\>", "<C-\\><C-n>:ToggleTerm<CR>", opts)
 
 -- Undotree
 keymap("n", "<leader>u", ":UndotreeToggle<CR>", opts)
@@ -97,3 +102,9 @@ keymap("n", "<leader>co", "<Cmd>TSContextToggle<CR>", opts)
 
 -- Git
 keymap("n", "<leader>gs", "<Cmd>Gitsigns toggle_current_line_blame<CR>", opts)
+
+-- To annoy everyone else but me
+keymap("n", "<Up>", "", opts)
+keymap("n", "<Down>", "", opts)
+keymap("n", "<Left>", "", opts)
+keymap("n", "<Right>", "", opts)
