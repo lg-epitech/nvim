@@ -11,7 +11,7 @@ local M = {
 
     opts = {
         email = "laurent.gonzalez@epitech.eu", -- Defaults to undefined
-        username = "LG", -- Defaults to undefined
+        username = "Laurent Gonzalez", -- Defaults to undefined
     },
 
     config = function(opts)
@@ -46,6 +46,19 @@ local M = {
             "lua", -- Extension
             "this lua file\nok", -- Replacement
             { padding = 1, separation = " " } -- Options
+        )
+
+        templates.add(
+            "hushit",
+[[SPDX-FileCopyrightText: hushit %yyyy
+SPDX-License-Identifier: Proprietary
+
+Author: %u (%m)
+File: %grp
+
+Proprietary and confidential. All rights reserved.
+Unauthorized copying of this file, via any medium is strictly prohibited.]],
+            { padding = 1, separation = " " }
         )
         templates.select("tek")
     end,

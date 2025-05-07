@@ -40,7 +40,8 @@ Spec "laurent.tailwind"
 Spec "laurent.context"
 Spec "laurent.rustacean"
 Spec "laurent.duckytype"
-Spec "laurent.neogit"
+Spec "laurent.markdown"
+Spec "laurent.vimbegood"
 
 -- Local plugins
 Spec "laurent.epi_headers"
