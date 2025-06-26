@@ -37,7 +37,7 @@ local M = {
 
             }),
             sources = cmp.config.sources({
-              { name = 'nvim_lsp', max_item_count = 6 },
+              { name = 'nvim_lsp' },
               -- { name = 'vsnip' }, -- For vsnip users.
               { name = 'luasnip' }, -- For luasnip users.
               -- { name = 'ultisnips' }, -- For ultisnips users.

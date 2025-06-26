@@ -42,6 +42,7 @@ Spec "laurent.rustacean"
 Spec "laurent.duckytype"
 Spec "laurent.markdown"
 Spec "laurent.vimbegood"
+Spec "laurent.cloak"
 
 -- Local plugins
 Spec "laurent.epi_headers"

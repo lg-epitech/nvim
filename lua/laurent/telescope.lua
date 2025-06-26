@@ -23,6 +23,7 @@ local M = {
                     "venv/.*",
                     ".venv/.*",
                     "node_modules/.*",
+                    ".git/.*",
                     -- Add any other patterns you want to ignore
                 },
             },
@@ -33,6 +34,7 @@ local M = {
                     "venv/.*",
                     ".venv/.*",
                     "node_modules/.*",
+                    ".git/.*"
                     -- Add any other patterns you want to ignore
                 },
             },
@@ -52,6 +54,6 @@ local M = {
             -- please take a look at the readme of the extension you want to configure
         },
     },
-}
 
+}
 return M
