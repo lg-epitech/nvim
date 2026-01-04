@@ -89,7 +89,7 @@ keymap("n", "<M-S>", "<C-W>-")
 keymap("n", "<F6>", "<Cmd>silent setlocal spell! spelllang=fr<CR>", opts)
 
 -- Dadbod
-keymap("n", "gdb", function()
+keymap("n", "<leader>db", function()
     vim.api.nvim_command("tabnew")
     vim.api.nvim_command("DBUI")
 end, opts)

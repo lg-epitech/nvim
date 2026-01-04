@@ -22,6 +22,16 @@ local M = {
                 enable = true,
             },
         }
+
+        require('nvim-treesitter.parsers').get_parser_configs().topineur = {
+          install_info = {
+            url = "~/projects/tree-sitter-topineur/",
+            files = { "src/parser.c" },
+            generate_requires_npm = true,
+            requires_generate_from_grammar = true,
+          },
+          filetype = "topineur",
+        }
     end,
     dependencies = {
         -- NOTE: additional parser

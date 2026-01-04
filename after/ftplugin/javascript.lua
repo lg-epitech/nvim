@@ -7,3 +7,5 @@ vim.keymap.set(
     '<Cmd>silent !prettier --write "%"<CR>',
     { noremap = true, silent = true }
 )
+
+vim.keymap.set('n', '<leader>l', "<CMD>=vim.cmd('silent !yarn exec eslint --fix %')<CR>", { desc = 'ESLint fix current file' })

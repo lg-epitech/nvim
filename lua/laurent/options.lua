@@ -27,3 +27,9 @@ vim.o.wrap = false
 vim.opt.mouse = ""
 vim.opt.mousescroll = "ver:0,hor:0"
 vim.o.pumheight = 6
+
+vim.filetype.add({
+  extension = {
+    top = "topineur",
+  },
+})

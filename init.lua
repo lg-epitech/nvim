@@ -43,11 +43,6 @@ Spec "laurent.duckytype"
 Spec "laurent.markdown"
 Spec "laurent.vimbegood"
 Spec "laurent.cloak"
-Spec "laurent.showtime"
-
--- Local plugins
-Spec "laurent.epi_headers"
 Spec "laurent.headersnvim"
-Spec "laurent.nshare"
 
 require "laurent.lazy"

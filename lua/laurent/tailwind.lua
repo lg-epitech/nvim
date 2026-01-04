@@ -1,4 +1,4 @@
 return {
-    "luckasRanarison/tailwind-tools.nvim",
+    "lg-epitech/tailwind-tools.nvim",
     opts = {},
 }

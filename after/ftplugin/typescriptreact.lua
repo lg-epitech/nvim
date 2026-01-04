@@ -7,3 +7,10 @@ vim.keymap.set(
     '<Cmd>silent !prettier --write "%"<CR>',
     { noremap = true, silent = true }
 )
+
+vim.keymap.set(
+    "n",
+    "<leader>l",
+    '<Cmd>silent !eslint --fix "%"<CR>',
+    { noremap = true, silent = true }
+)

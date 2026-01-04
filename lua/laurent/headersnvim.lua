@@ -6,8 +6,7 @@
 --
 
 local M = {
-    "headers.nvim",
-    dir = "~/projects/headers.nvim",
+    "lg-epitech/headers.nvim",
 
     opts = {
         email = "laurent.gonzalez@epitech.eu", -- Defaults to undefined
