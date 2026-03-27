@@ -12,7 +12,6 @@ vim.g.loaded_ruby_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.opt.inccommand = "split"
 vim.opt.formatoptions:remove "o"
-vim.opt.spelllang = { "fr" }
 
 vim.opt.undodir = "/home/laurent/.config/nvim/undodir//"
 vim.opt.backupdir = "/home/laurent/.config/nvim/backupdir//"
@@ -33,3 +32,6 @@ vim.filetype.add({
     top = "topineur",
   },
 })
+
+-- views can only be fully collapsed with the global statusline
+vim.opt.laststatus = 3

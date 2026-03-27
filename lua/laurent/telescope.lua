@@ -34,7 +34,6 @@ local M = {
                     "venv/.*",
                     ".venv/.*",
                     "node_modules/.*",
-                    ".git/.*"
                     -- Add any other patterns you want to ignore
                 },
             },
