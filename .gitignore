@@ -1,3 +1,4 @@
 backupdir/*
 undodir/*
 swapdir/*
+tmp/
