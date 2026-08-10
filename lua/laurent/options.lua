@@ -13,9 +13,9 @@ vim.g.loaded_perl_provider = 0
 vim.opt.inccommand = "split"
 vim.opt.formatoptions:remove "o"
 
-vim.opt.undodir = "/home/laurent/.config/nvim/undodir//"
-vim.opt.backupdir = "/home/laurent/.config/nvim/backupdir//"
-vim.opt.directory = "/home/laurent/.config/nvim/swapdir//"
+vim.opt.undodir = "/Users/laurent/.config/nvim/undodir//"
+vim.opt.backupdir = "/Users/laurent/.config/nvim/backupdir//"
+vim.opt.directory = "/Users/laurent/.config/nvim/swapdir//"
 vim.opt.swapfile = false
 vim.opt.backup = true
 vim.opt.undofile = true
