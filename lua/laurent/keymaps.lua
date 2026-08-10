@@ -31,6 +31,37 @@ keymap("n", "<C-c>", "<Esc>:nohl<CR>", opts)
 keymap("i", "<C-H>", "<Esc>dbs", opts)
 keymap("n", "<F1>", "", opts)
 
+-- File-history navigation: <C-o> = back one file, <C-S-o> = forward one file.
+-- Walks the jumplist but skips every jump inside the current buffer, so each
+-- press lands on the most recent position in a different file. Navigation is
+-- done with native {count}<C-o>/{count}<C-i>, so the history itself is never
+-- modified by going back and forth.
+local function jump_file(back)
+    local jumps, cur = unpack(vim.fn.getjumplist())
+    local curbuf = vim.api.nvim_get_current_buf()
+    local step = back and -1 or 1
+    -- `cur` is the 0-based jumplist position; k presses of <C-o>/<C-i> land
+    -- on 0-based index cur - k / cur + k.
+    local i = cur + step
+    while i >= 0 and i < #jumps do
+        local entry = jumps[i + 1]
+        if entry.bufnr ~= curbuf and vim.fn.bufexists(entry.bufnr) == 1 then
+            local count = math.abs(i - cur)
+            local key = back and "\15" or "\9" -- <C-o> / <C-i>
+            vim.cmd("normal! " .. count .. key .. "zz")
+            return
+        end
+        i = i + step
+    end
+end
+
+keymap("n", "<C-o>", function()
+    jump_file(true)
+end, opts)
+keymap("n", "<C-S-o>", function()
+    jump_file(false)
+end, opts)
+
 -- Telescope
 keymap("n", "<leader>b", ":Telescope buffers<CR>", opts)
 keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
@@ -39,10 +70,16 @@ keymap("n", "<leader>/", ":Telescope current_buffer_fuzzy_find<CR>", opts)
 keymap("n", "<leader>gw", ":Telescope grep_string<CR>", opts)
 
 -- Move
+-- macOS sends literal glyphs for Option+key (US layout): j=∆ k=˚ h=˙ l=¬
+-- so we map both <A-..> (Linux/Meta) and the glyphs (mac, no terminal change)
 keymap("n", "<A-j>", ":MoveLine(1)<CR>", opts)
 keymap("n", "<A-k>", ":MoveLine(-1)<CR>", opts)
 keymap("n", "<A-h>", ":MoveHChar(-1)<CR>", opts)
 keymap("n", "<A-l>", ":MoveHChar(1)<CR>", opts)
+keymap("n", "∆", ":MoveLine(1)<CR>", opts)
+keymap("n", "˚", ":MoveLine(-1)<CR>", opts)
+keymap("n", "˙", ":MoveHChar(-1)<CR>", opts)
+keymap("n", "¬", ":MoveHChar(1)<CR>", opts)
 keymap("n", "<C-d>", "<C-d>zz", opts)
 keymap("n", "<C-u>", "<C-u>zz", opts)
 
@@ -51,6 +88,10 @@ keymap("v", "<A-j>", ":MoveBlock(1)<CR>", opts)
 keymap("v", "<A-k>", ":MoveBlock(-1)<CR>", opts)
 keymap("v", "<A-h>", ":MoveHBlock(-1)<CR>", opts)
 keymap("v", "<A-l>", ":MoveHBlock(1)<CR>", opts)
+keymap("v", "∆", ":MoveBlock(1)<CR>", opts)
+keymap("v", "˚", ":MoveBlock(-1)<CR>", opts)
+keymap("v", "˙", ":MoveHBlock(-1)<CR>", opts)
+keymap("v", "¬", ":MoveHBlock(1)<CR>", opts)
 
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
