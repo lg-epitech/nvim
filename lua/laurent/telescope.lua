@@ -18,7 +18,7 @@ local M = {
         pickers = {
             find_files = {
                 hidden = true,
-                no_ignore = true,
+                no_ignore = false,
                 file_ignore_patterns = {
                     "venv/.*",
                     ".venv/.*",
@@ -29,11 +29,12 @@ local M = {
             },
             live_grep = {
                 hidden = true,
-                no_ignore = true,
+                no_ignore = false,
                 file_ignore_patterns = {
                     "venv/.*",
                     ".venv/.*",
                     "node_modules/.*",
+                    ".git/.*",
                     -- Add any other patterns you want to ignore
                 },
             },
