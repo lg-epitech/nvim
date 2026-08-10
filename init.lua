@@ -46,4 +46,9 @@ Spec "laurent.supermaven"
 Spec "laurent.avante"
 Spec "laurent.99"
 
+-- Machine-local specs, kept out of git (lua/laurent/local/ is gitignored)
+for _, f in ipairs(vim.fn.glob(vim.fn.stdpath("config") .. "/lua/laurent/local/*.lua", true, true)) do
+    Spec("laurent.local." .. vim.fn.fnamemodify(f, ":t:r"))
+end
+
 require "laurent.lazy"

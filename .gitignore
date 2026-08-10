@@ -2,3 +2,4 @@ backupdir/*
 undodir/*
 swapdir/*
 tmp/
+lua/laurent/local/
