@@ -10,7 +10,15 @@ local M = {
             },
             ts_ls = {
                 capabilities = capabilities,
+                on_new_config = function(new_config, new_root_dir)
+                    local sdk_path = new_root_dir .. "/.yarn/sdks/typescript/lib"
+                    if vim.fn.isdirectory(sdk_path) == 1 then
+                        new_config.init_options = new_config.init_options or {}
+                        new_config.init_options.typescript = { tsdk = sdk_path }
+                    end
+                end,
             },
+            denols = {},
             bashls = {
                 capabilities = capabilities,
             },
@@ -73,6 +81,7 @@ local M = {
             yamlls = {},
             asm_lsp = {},
             nushell = {},
+            rust_analyser = {},
             hls = {
                 cmd = { "haskell-language-server", "--lsp" }
             },
